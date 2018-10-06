@@ -3,6 +3,7 @@ Simple discord python bot
 
 # Prerequisites:
 python3
+
 [discord.py](https://github.com/Rapptz/discord.py)
 
 # config
