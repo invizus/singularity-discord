@@ -1,0 +1,8 @@
+version: "3.2"
+services:
+  bot:
+    image: singularity:v302
+    volumes:
+      - type: bind
+        source: ./singularity-data
+        target: /var
