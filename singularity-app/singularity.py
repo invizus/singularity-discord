@@ -3,6 +3,7 @@ import asyncio
 from discord.ext import commands
 import profs
 import yaml
+#from additional import *
 ### TODO
 ### 1. try/exception - somehow done
 ### 2. ability  add profs - done
@@ -78,7 +79,6 @@ async def initiate(ctx, newmember: discord.Member):
             await bot.say("New member initiated. Lets welcome {} !".format(newmember))
     else:
         await bot.say("```Error.```")
-
 
 @bot.command()
 async def whois(member : discord.Member):

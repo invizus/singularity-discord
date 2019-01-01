@@ -1,9 +1,12 @@
 #!/usr/bin/python3
 import json
 import math
+import yaml
 
-LANG = 'EN'
-jsonFile = 'prof.json'
+Config = yaml.load(open("/var/config.yml", "r"))
+# LANG = 'EN'
+jsonFile = Config['database']
+
 
 labelLevelEN = " level: "
 labelExpEN = " Exp: "

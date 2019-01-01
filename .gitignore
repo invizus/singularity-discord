@@ -1,0 +1,5 @@
+__pycache__
+./singularity-data/config.yml
+./singularity-data/database.json
+./singularity-data/uploads/*
+./singularity-app/additional.py
