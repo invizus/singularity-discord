@@ -9,7 +9,7 @@ import yaml
 ### 2. ability  add profs - done
 ### 3. backend to add users/remove profs - user add done
 
-Config = yaml.load(open("config.yml", "r"))
+Config = yaml.load(open("/var/config.yml", "r"))
 token = Config['token']
 botadmin = Config['admin']
 
