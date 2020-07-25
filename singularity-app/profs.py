@@ -3,7 +3,7 @@ import json
 import math
 import yaml
 
-Config = yaml.load(open("/var/config.yml", "r"))
+Config = yaml.load(open("/var/config.yml", "r"), Loader=yaml.FullLoader)
 # LANG = 'EN'
 jsonFile = Config['database']
 

@@ -1,8 +1,10 @@
 version: "3.2"
 services:
   bot:
-    image: singularity:v401
+    image: singularity:v402
     volumes:
       - type: bind
         source: ./singularity-data
         target: /var
+    restart: always
+

@@ -1,9 +1,9 @@
 # singularity-discord
-Simple discord python bot
+Simple discord python bot.
 
-Implemented skills rpg-style mode:
+RPG-style leveling up your skills.
 
-Add your professions and level up, reach new levels and show off to everyone.
+Define profession, add experience and achieve new levels.
 
 ## Prerequisites:
 python3
@@ -12,15 +12,22 @@ PyYAML
 
 [discord.py](https://github.com/Rapptz/discord.py)
 
-## config
-in config.yml set 
-- your bot's token ID and 
-- your discord user ID to get some admin privileges
+## singularity-data files
+Rename database.json.example to database.json
+
+Rename config.yml.example to config.yml
+
+### config.yml
+in config.yml set:
+- bot token ID
+- discord user ID who will have admin privileges
 - path to database.json can stay same
 
-## Build
+## Build & run
 ```
-docker build . -t singularity:v401
+git clone https://github.com/invizus/singularity-discord
+cd singularity-discord
+docker build . -t singularity:v402
 docker-compose up -d
 ```
 

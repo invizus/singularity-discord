@@ -6,4 +6,4 @@ COPY requirements.txt /app
 
 RUN pip3 install --trusted-host pypi.python.org -r requirements.txt
 
-CMD ["python3", "singularity.py"]
+CMD ["python3", "-u", "singularity.py"]
